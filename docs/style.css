@@ -11,10 +11,10 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: #050801;
+  background: #121212;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  color: #03e9f4;
+  color: #ff6600;
   text-align: center;
 }
 
@@ -26,23 +26,31 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
-  color: #03e9f4;
-  text-shadow: 0 0 10px #03e9f4;
+  color: #ff6600;
+  text-shadow: 0 0 10px #ff6600;
 }
 
 .description {
+  font-weight: 300;
   font-size: 1.2rem;
   color: #aaa;
   margin-bottom: 40px;
   line-height: 1.5;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+    overflow-wrap: anywhere;
+  line-height: 1.5;
+  max-width: 65ch; 
+
 }
 
 /* ANIMATED LINK BUTTON */
-a {
+#button {
   position: relative;
   display: inline-block;
   padding: 20px 30px;
-  color: #03e9f4;
+  color: #ff6600;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -52,11 +60,11 @@ a {
   border-radius: 5px;
 }
 
-a:hover {
-  background: #03e9f4;
+#button:hover {
+  background: #ff6600;
   color: #050801;
-  box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
-    0 0 200px #03e9f4;
+  box-shadow: 0 0 5px #ff6600, 0 0 25px #ff6600, 0 0 50px #ff6600,
+    0 0 200px #ff6600;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
@@ -70,7 +78,7 @@ a span:nth-child(1) {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #ff6600);
   animation: animate1 1s linear infinite;
 }
 @keyframes animate1 {
@@ -87,7 +95,7 @@ a span:nth-child(2) {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #ff6600);
   animation: animate2 1s linear infinite;
   animation-delay: 0.25s;
 }
@@ -105,7 +113,7 @@ a span:nth-child(3) {
   right: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #ff6600);
   animation: animate3 1s linear infinite;
   animation-delay: 0.5s;
 }
@@ -123,7 +131,7 @@ a span:nth-child(4) {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #ff6600);
   animation: animate4 1s linear infinite;
   animation-delay: 0.75s;
 }
@@ -134,4 +142,54 @@ a span:nth-child(4) {
   50%, 100% {
     bottom: 100%;
   }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: #0E0E0E;
+  border-top: 1px solid rgba(255, 102, 0, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+
+footer .contact,
+footer #copyright,
+footer .site {
+  flex: 1 1 0;
+}
+
+.contact {
+  text-align: left;
+  font-size: 12px;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 12px;
+}
+
+.site {
+  text-align: right;
+  font-size: 12px;
+}
+
+.contact p {
+  display: inline-block; 
+  margin-right: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+ a:hover {
+  text-decoration: underline;
+  text-shadow: 0 0 10px #ff6600;
 }
