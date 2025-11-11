@@ -76,10 +76,10 @@
 		<h1>Política de Privacidade — OMSYS Mailer</h1>
 
 		<div class="meta-info">
-		  <p><strong>Controladora:</strong> R.R. MOCHI DE OLIVEIRA & CIA LTDA</p>
+		  <p><strong>Controladora (empresa responsável pelo tratamento de dados):</strong> OLIVEIRA & MONTE LTDA</p>
 		  <p><strong>Aplicativo:</strong> OMSYS Mailer</p>
-		  <p><strong>Última atualização:</strong> 09 de junho de 2022</p>
-		  <p><strong>Versão:</strong> 1.0</p>
+		  <p><strong>Última atualização:</strong> 11 de novembro de 2025</p>
+		  <p><strong>Versão:</strong> 2.0</p>
 		</div>
 
 		<div class="highlight">
@@ -136,6 +136,62 @@
 			O compartilhamento sempre seguirá as leis aplicáveis, garantindo a segurança dos dados e adotando padrões técnicos do mercado.
 		</p>
 
+		<h3>2.1. Uso dos Dados do Usuário do Google</h3>
+			<p>
+				O aplicativo <strong>OMSYS Mailer</strong> utiliza as credenciais e permissões concedidas pelo usuário por meio do
+				<strong>OAuth 2.0 do Google</strong> exclusivamente para possibilitar o envio de e-mails em nome do usuário, dentro do sistema ERP OMSYS.
+			</p>
+			<p>
+				Os dados obtidos através da <strong>API do Gmail</strong> são utilizados unicamente para:
+			</p>
+			<ul>
+				<li>Autenticar o usuário com sua conta Google;</li>
+				<li>Obter um token de acesso seguro para envio de e-mails autorizados pelo próprio usuário;</li>
+				<li>Realizar os disparos de mensagens conforme as ações executadas no sistema ERP.</li>
+			</ul>
+			<p>
+				O <strong>OMSYS Mailer</strong> <strong>não lê, indexa, compartilha ou analisa o conteúdo da caixa de entrada, mensagens recebidas, contatos ou anexos do usuário</strong>.
+				O aplicativo apenas processa as mensagens que o próprio usuário solicita enviar pelo ERP.
+			</p>
+			<p>
+				O tratamento dos dados segue integralmente as
+				<a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">
+					Políticas de Dados do Usuário dos Serviços da API do Google
+				</a>, incluindo os requisitos de <strong>uso limitado (“Limited Use”)</strong>.
+			</p>
+			<p>
+				O aplicativo apenas registra informações técnicas de envio (como remetente, destinatários e corpo da mensagem)
+				em logs temporários para fins de auditoria, conforme descrito na seção 2.2.
+			</p>
+
+		<h3>2.2. Retenção e Exclusão de Dados do Usuário do Google</h3>
+			<p>
+				O <strong>OMSYS Mailer</strong> armazena <strong>tokens de autenticação do Google</strong> de forma criptografada e segura em seus servidores,
+				apenas enquanto a integração do usuário estiver ativa. Esses tokens permitem o envio de e-mails sem a necessidade de repetição constante do login,
+				garantindo conveniência e segurança.
+			</p>
+			<ul>
+				<li>
+					Quando o usuário <strong>revoga o acesso</strong> diretamente em sua conta Google
+					(<a href="https://myaccount.google.com/permissions" target="_blank">https://myaccount.google.com/permissions</a>)
+					ou solicita a revogação via suporte do ERP OMSYS, todos os tokens e dados associados são
+					<strong>imediatamente excluídos</strong> dos servidores do aplicativo.
+				</li>
+				<li>
+					O sistema <strong>não mantém cópia permanente</strong> de e-mails enviados, anexos ou contatos do usuário.
+				</li>
+				<li>
+					<strong>Logs de auditoria</strong> podem armazenar informações técnicas dos e-mails enviados
+					(como data, hora, remetente, destinatários, assunto e corpo da mensagem)
+					<strong>exclusivamente para fins de auditoria e rastreabilidade</strong>,
+					pelo prazo máximo de <strong>90 (noventa) dias</strong>, sendo então <strong>anonimizados ou excluídos</strong> de forma segura.
+				</li>
+				<li>
+					O usuário pode, a qualquer momento, <strong>solicitar a exclusão de seus dados</strong> entrando em contato com o
+					<strong>Encarregado de Proteção de Dados (DPO)</strong> pelos canais informados ao final desta política.
+				</li>
+			</ul>
+
 		<h2>3. Prazo de Armazenamento</h2>
 		<p>
 			Os dados pessoais serão armazenados pelo tempo necessário para atingir as finalidades descritas nesta política, considerando:
@@ -150,53 +206,64 @@
 		</p>
 
 		<h2>4. Bases Legais para o Tratamento</h2>
-		<p>
-			Toda operação de tratamento de dados pessoais possui uma base legal, conforme a LGPD.
-			Mais informações sobre as bases legais utilizadas podem ser obtidas pelos canais de contato indicados ao final desta política.
-		</p>
+			<p>
+				O tratamento de dados relacionados à integração com o Google é realizado com base no <strong>consentimento do usuário</strong> (art. 7º, inciso I da LGPD), manifestado ao autorizar o acesso via OAuth 2.0.
+			</p>
 
 		<h2>5. Medidas de Segurança no Tratamento</h2>
-		<p>
-			Adotamos medidas técnicas e organizacionais para proteger os dados pessoais contra:
-		</p>
-		<ul>
-			<li>Acessos não autorizados;</li>
-			<li>Destruição, perda, extravio ou alteração indevida.</li>
-		</ul>
-		<p>
-			<strong>Medidas adotadas incluem:</strong>
-		</p>
-		<ul>
-			<li>Armazenamento de senhas com hashes criptográficos;</li>
-			<li>Restrições de acesso a bancos de dados;</li>
-			<li>Monitoramento do acesso físico aos servidores.</li>
-		</ul>
-		<p>
-			Ainda que adotemos boas práticas, incidentes podem ocorrer por fatores externos (ex.: ataques hackers) ou culpa exclusiva do usuário (ex.: compartilhamento indevido de dados).
-			Nesses casos, não nos responsabilizamos por situações fora de nosso controle.
-		</p>
-		<p>
-			Caso ocorra um incidente que gere risco ou dano relevante, comunicaremos:
-		</p>
-		<ul>
-			<li>Os usuários afetados; e</li>
-			<li>A Autoridade Nacional de Proteção de Dados (ANPD).</li>
-		</ul>
+			<p>
+				Adotamos medidas técnicas e organizacionais para proteger os dados pessoais contra:
+			</p>
+			<ul>
+				<li>Acessos não autorizados;</li>
+				<li>Destruição, perda, extravio ou alteração indevida.</li>
+			</ul>
+			<p>
+				<strong>Medidas adotadas incluem:</strong>
+			</p>
+			<ul>
+				<li>Armazenamento de senhas com hashes criptográficos;</li>
+				<li>Restrições de acesso a bancos de dados;</li>
+				<li>Monitoramento do acesso físico aos servidores.</li>
+			</ul>
+			<p>
+				Ainda que adotemos boas práticas, incidentes podem ocorrer por fatores externos (ex.: ataques hackers) ou culpa exclusiva do usuário (ex.: compartilhamento indevido de dados).
+				Nesses casos, não nos responsabilizamos por situações fora de nosso controle.
+			</p>
+			<p>
+				Caso ocorra um incidente que gere risco ou dano relevante, comunicaremos:
+			</p>
+			<ul>
+				<li>Os usuários afetados; e</li>
+				<li>A Autoridade Nacional de Proteção de Dados (ANPD).</li>
+			</ul>
+
+		<h2>5.1. Direitos dos Titulares de Dados</h2>
+			<p>
+				Conforme previsto na Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), o titular pode, a qualquer momento:
+			</p>
+			<ul>
+				<li>Confirmar a existência de tratamento de seus dados pessoais;</li>
+				<li>Solicitar acesso, correção ou atualização de seus dados;</li>
+				<li>Solicitar anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a lei;</li>
+				<li>Solicitar portabilidade a outro fornecedor de serviço;</li>
+				<li>Revogar o consentimento previamente concedido;</li>
+				<li>Obter informações sobre o compartilhamento de dados com terceiros.</li>
+			</ul>
 
 		<h2>6. Alterações nesta Política</h2>
-		<p>
-			Podemos modificar esta política a qualquer momento, especialmente para adequações decorrentes de mudanças no aplicativo.
-			Quando houver alterações relevantes, os usuários serão notificados por e-mail cadastrado no ato da contratação.
-		</p>
-		<p><strong>Última atualização:</strong> 09 de junho de 2022</p>
+			<p>
+				Podemos modificar esta política a qualquer momento, especialmente para adequações decorrentes de mudanças no aplicativo.
+				Quando houver alterações relevantes, os usuários serão notificados por e-mail cadastrado no ato da contratação.
+			</p>
 
 		<h2>7. Como Entrar em Contato</h2>
-		<p><strong>Encarregado de Proteção de Dados Pessoais (DPO):</strong></p>
-		<ul>
-			<li><strong>E-mail:</strong> <a href="mailto:app@omturbo.com">app@omturbo.com</a></li>
-			<li><strong>Telefone:</strong> +55 (67) 2108-2600</li>
-			<li><strong>Endereço Postal:</strong> Rua Avenida Weimar Gonçalves Torres, 3005 — Bairro Centro — Dourados/MS — CEP 79800-023</li>
-		</ul>
+			<p><strong>Encarregado de Proteção de Dados Pessoais (DPO):</strong></p>
+			<ul>
+				<li><strong>E-mail:</strong> <a href="mailto:app@omturbo.com">app@omturbo.com</a></li>
+				<li><strong>Telefone:</strong> +55 (67) 2108-2600</li>
+				<li><strong>Endereço Postal:</strong> Rua Avenida Weimar Gonçalves Torres, 3005 — Bairro Centro — Dourados/MS — CEP 79800-023</li>
+			</ul>
 	</div>
 </body>
 </html>
